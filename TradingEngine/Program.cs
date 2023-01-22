@@ -1,5 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using TradingEngine.Data;
+using TradingEngine.Repositories;
+using TradingEngine.Repositories.Interfaces;
+using TradingEngine.Services;
+using TradingEngine.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +19,8 @@ builder.Services.AddDbContext<DataContext>(
             options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
         }
     );
+builder.Services.AddScoped<IAppUserRepository, AppUserRepository>();
+builder.Services.AddScoped<IAppUserService, AppUserService>();
 
 var app = builder.Build();
 

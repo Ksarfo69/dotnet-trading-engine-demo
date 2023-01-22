@@ -1,6 +1,6 @@
 ﻿using TradingEngine.Models;
 
-namespace TradingEngine.Interfaces
+namespace TradingEngine.Repositories.Interfaces
 {
     public interface IOrderRepository
     {

@@ -15,8 +15,8 @@ namespace TradingEngine.Migrations
                 columns: table => new
                 {
                     Username = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    Fname = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Lname = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Firstname = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Lastname = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>

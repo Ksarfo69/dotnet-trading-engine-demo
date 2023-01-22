@@ -1,6 +1,6 @@
 ﻿using TradingEngine.Data;
-using TradingEngine.Interfaces;
 using TradingEngine.Models;
+using TradingEngine.Repositories.Interfaces;
 
 namespace TradingEngine.Repositories
 {

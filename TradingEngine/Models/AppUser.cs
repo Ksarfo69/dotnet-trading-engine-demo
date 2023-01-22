@@ -7,9 +7,9 @@ namespace TradingEngine.Models
         [Key]
         public string Username { get; set; }
 
-        public string Fname { get; set; }
+        public string Firstname { get; set; }
 
-        public string Lname { get; set; }
+        public string Lastname { get; set; }
 
         public string Email { get; set; }
     }

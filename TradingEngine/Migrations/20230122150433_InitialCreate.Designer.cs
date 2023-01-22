@@ -11,7 +11,7 @@ using TradingEngine.Data;
 namespace TradingEngine.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20221220204630_InitialCreate")]
+    [Migration("20230122150433_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -33,11 +33,11 @@ namespace TradingEngine.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Fname")
+                    b.Property<string>("Firstname")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Lname")
+                    b.Property<string>("Lastname")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
